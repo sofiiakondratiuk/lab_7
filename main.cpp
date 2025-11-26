@@ -2,19 +2,17 @@
 #include <iomanip>
 #include <cmath>
 
-using namespace std;
-
 int main() 
 {
     float x = 3.0;
     float x_end = 6.0;
     float h = 0.5;
     float y;
-    cout << setw(10) << "x" << setw(15) << "Y" << endl;
-    cout << "---------------------------" << endl;
+    std::cout << std::setw(10) << "x" << std::setw(15) << "Y" << std::endl;
+    std::cout << "---------------------------" << std::endl;
     do {
         y = cos(x * x) + pow(sin(x), 2) + 2;
-        cout << setw(10) << x << setw(15) << y << endl;
+        std::cout << std::setw(10) << x << std::setw(15) << y << std::endl;
         x += h;
     } 
     while (x <= x_end);
