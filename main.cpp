@@ -4,6 +4,8 @@
 
 int main() 
 {
+    std::cout << "PROGRAM START" << std::endl;
+
     float x = 3.0;
     float x_end = 6.0;
     float h = 0.5;
